@@ -3,7 +3,6 @@ import { Router } from 'react-static';
 import { hot } from 'react-hot-loader';
 import { ApolloProvider } from 'react-apollo';
 import { Provider } from 'react-redux';
-import Particles from 'particlesjs';
 import client from './connectors/apollo';
 import store from './connectors/redux';
 import Content from './Content';
