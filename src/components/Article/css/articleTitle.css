@@ -1,0 +1,58 @@
+.svg-wrapper {
+  height: 60px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 200 540;
+  stroke-dashoffset: -474;
+  stroke-width: 2px;
+  stroke: #7d8193;
+  -webkit-animation: 0.5s erase linear forwards;
+  animation: 0.5s erase linear forwards;
+}
+
+.text {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 22px;
+  position: relative;
+  top: -48px;
+  margin: 0 20px 0 35px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 200 540;
+    stroke-dashoffset: -474;
+    stroke-width: 2px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+@keyframes erase {
+  0% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+  100% {
+    stroke-dasharray: 200 540;
+    stroke-dashoffset: -474;
+    stroke-width: 2px;
+  }
+}
+
+.article-container:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}

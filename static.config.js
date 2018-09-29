@@ -1,8 +1,12 @@
 import axios from 'axios';
 import React, { Component } from 'react';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export default {
   getSiteData: () => ({
+    env: process.env,
     title: 'Cameron Aziz - Javascript Engineer - Los Angeles, CA',
   }),
   getRoutes: async () => {

@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 import { withSiteData } from 'react-static';
 import Close from '../components/Close';
 import Article from '../components/Article';
-import { ArticleTitle } from './styled';
 
 class About extends Component {
   render() {
     const { history, closeArticle } = this.props;
     return (
-      <Article id="about" className="active" width="40rem">
-        <ArticleTitle>About</ArticleTitle>
+      <Article id="about" className="active" width="40rem" title="About Me">
         <span className="image main">
           <img src="/images/about.png" alt="" />
         </span>

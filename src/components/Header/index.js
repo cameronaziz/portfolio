@@ -5,7 +5,8 @@ import Logo from './Logo';
 
 class Header extends Component {
   render() {
-    if (this.props.articleOpen) {
+    const { introTitle, articleOpen } = this.props;
+    if (articleOpen) {
       return null;
     }
     return (
@@ -13,7 +14,8 @@ class Header extends Component {
         <Logo />
         <div className="content">
           <div className="inner">
-            <h1>Hi. I&apos;m Cameron Aziz.</h1>
+            <h1>{introTitle}</h1>
+            {/* <h1>Hi. I&apos;m Cameron Aziz.</h1> */}
             <p>
               I&apos;m a web engineer specializing in full stack Javascript
               applications. Like this one.
