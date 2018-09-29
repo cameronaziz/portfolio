@@ -57,12 +57,15 @@ export default {
           </Head>
           <Body className="is-preload">
             {children}
+            <canvas id="fog" />
             <div id="bg" />
             <script src="/assets/js/jquery.min.js" />
             <script src="/assets/js/browser.min.js" />
             <script src="/assets/js/breakpoints.min.js" />
             <script src="/assets/js/util.js" />
             <script src="/assets/js/main.js" />
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
+            <script src="/assets/js/fog.js" />
           </Body>
         </Html>
       );

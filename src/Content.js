@@ -75,8 +75,8 @@ class Content extends Component {
 
   setNewTitle = (contactName) => {
     this.setState({
-      introTitle: `Well hello, ${contactName}. I'll be in touch.`
-    })
+      introTitle: `Well hello, ${contactName}. I'll be in touch.`,
+    });
   }
 
 

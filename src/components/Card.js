@@ -4,9 +4,9 @@ import './css/Card.css';
 
 const CardComponent = ({ card }) => (
   <div className="card" data-effect="zoom">
-    <button className="card__save js-save" type="button">
+    {/* <button className="card__save js-save" type="button">
       <i className="fa fa-search" />
-    </button>
+    </button> */}
     <figure className="card__image" style={{ background: card.bg }} />
     <div className="card__header" />
     <div className="card__body">

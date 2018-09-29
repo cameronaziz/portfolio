@@ -3,7 +3,7 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 320px;
+  width: 300px;
 }
 
 .shape {
@@ -22,7 +22,7 @@
   letter-spacing: 8px;
   line-height: 22px;
   position: relative;
-  top: -48px;
+  top: -47px;
   margin: 0 20px 0 35px;
 }
 
