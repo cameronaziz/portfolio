@@ -3,6 +3,7 @@ import { Router } from 'react-static';
 import { hot } from 'react-hot-loader';
 import { ApolloProvider } from 'react-apollo';
 import { Provider } from 'react-redux';
+import Particles from 'particlesjs';
 import client from './connectors/apollo';
 import store from './connectors/redux';
 import Content from './Content';
@@ -10,6 +11,16 @@ import './assets/css/app.css';
 
 
 export class App extends Component {
+  componentDidMount() {
+    window.onload = () => {
+      Particles.init({
+        selector: '.background',
+        color: '#99ccff',
+        connectParticles: true,
+      });
+    };
+  }
+
   render() {
     return (
       <ApolloProvider client={client}>

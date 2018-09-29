@@ -10,7 +10,7 @@ class Header extends Component {
       return null;
     }
     const hi = introTitle.substring(0, 3);
-    const name = introTitle.substring(4, introTitle.length - 1);
+    const name = introTitle.substring(4, introTitle.length);
     return (
       <header id="header">
         <Logo />
