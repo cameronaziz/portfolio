@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component will match snapshot 1`] = `
+<div
+  id="wrapper"
+>
+  <header
+    id="header"
+  >
+    <div
+      className="logo"
+    >
+      <span
+        className="icon fa-file-code-o"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="inner"
+      >
+        <h1>
+          Hi. I'm Cameron Aziz.
+        </h1>
+        <p>
+          I'm a web engineer specializing in full stack Javascript applications. Like this one.
+        </p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a
+            aria-current={null}
+            href="/work"
+            onClick={[Function]}
+          >
+            Work
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            href="/about"
+            onClick={[Function]}
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            href="/contact"
+            onClick={[Function]}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    id="main"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />
+  <footer
+    id="footer"
+  >
+    <p
+      className="copyright"
+    >
+      © 
+      2018
+       Cameron Aziz
+    </p>
+  </footer>
+</div>
+`;
