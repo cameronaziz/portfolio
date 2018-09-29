@@ -9,12 +9,14 @@ class Header extends Component {
     if (articleOpen) {
       return null;
     }
+    const hi = introTitle.substring(0, 3);
+    const name = introTitle.substring(4, introTitle.length - 1);
     return (
       <header id="header">
         <Logo />
         <div className="content">
           <div className="inner">
-            <h1>{introTitle}</h1>
+            <h1><span className="title-hi">{hi}</span> {name}</h1>
             {/* <h1>Hi. I&apos;m Cameron Aziz.</h1> */}
             <p>
               I&apos;m a web engineer specializing in full stack Javascript

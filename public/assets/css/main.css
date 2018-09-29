@@ -1626,9 +1626,31 @@ body.is-preload #header .content .inner {
     margin-top: 2rem;
   }
 
-  #header > *:before {
-    top: calc(-2rem - 1px);
-    height: calc(2rem + 1px);
+  .title-hi {
+    display: block;
+  }
+
+  #header > div:before {
+    top: calc(-2rem - 1px) !important;
+    height: calc(2rem + 1px) !important;
+  }
+
+  header > .content:after {
+    bottom: calc(-2rem - 1px) !important;
+    height: calc(2rem + 1px) !important;
+    -webkit-animation: 1.5s growNavLineMobile linear forwards;
+    animation: 1.5s growNavLineMobile linear forwards;
+  }
+
+  @keyframes growNavLineMobile {
+    0% {
+      bottom: calc(0rem - 1px);
+      height: calc(0rem + 1px);
+    }
+    100% {
+      bottom: calc(-2rem - 1px);
+      height: calc(2rem + 1px);
+    }
   }
 
   #header .logo {
