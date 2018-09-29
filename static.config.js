@@ -67,7 +67,6 @@ export default {
             <script src="/assets/js/main.js" />
             <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
             {/* <script src="/assets/js/fog.js" /> */}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js" />
             <script src="/assets/js/particles.js" />
             </Body>
         </Html>

@@ -1,4 +1,5 @@
 window.onload = () => {
+  const Particles = require('particlesjs');
   // eslint-disable-next-line no-undef
   Particles.init({
     selector: '.background',
