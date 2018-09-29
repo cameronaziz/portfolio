@@ -11,16 +11,6 @@ import './assets/css/app.css';
 
 
 export class App extends Component {
-  componentDidMount() {
-    window.onload = () => {
-      Particles.init({
-        selector: '.background',
-        color: '#99ccff',
-        connectParticles: true,
-      });
-    };
-  }
-
   render() {
     return (
       <ApolloProvider client={client}>
