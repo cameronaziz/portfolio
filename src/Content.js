@@ -58,7 +58,7 @@ class Content extends Component {
   }
 
   toggleArticle = (contactName) => {
-    if (contactName) {
+    if (typeof(contactName) === 'string') {
       this.setNewTitle(contactName);
     }
     const { articleOpen } = this.state;
