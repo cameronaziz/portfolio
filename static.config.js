@@ -59,7 +59,7 @@ export default {
             {children}
             <canvas className="background" />
             {/* <canvas id="fog" /> */}
-            <div id="bg" />
+            {/* <div id="bg" /> */}
             <script src="/assets/js/jquery.min.js" />
             <script src="/assets/js/browser.min.js" />
             <script src="/assets/js/breakpoints.min.js" />
