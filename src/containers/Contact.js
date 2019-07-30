@@ -70,9 +70,8 @@ class Contact extends Component {
             <li><input type="button" value="Send Message" className="primary button" onClick={this.submitForm} /></li>
             <li>
               <ul className="icons">
-                <li><a href="#" className="icon fa-at"><span className="label">Email</span></a></li>
-                <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
-                <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+                <li><a href="mailto:cameronaziz@me.com" className="icon fa-at"><span className="label">Email</span></a></li>
+                <li><a href="https://github.com/cameronaziz" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
               </ul>
             </li>
           </ul>
