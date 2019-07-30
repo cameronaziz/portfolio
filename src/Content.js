@@ -128,7 +128,6 @@ class Content extends Component {
         <Header introTitle={introTitle} openArticle={this.toggleArticle} articleOpen={articleOpen} />
         <div id="main" style={mainStyle}>
           <Switch>
-            {/* <Route exact path="/" /> */}
             <Route path="/about">
               <Containers.About closeArticle={this.toggleArticle} />
             </Route>

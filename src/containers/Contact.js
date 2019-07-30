@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withSiteData } from 'react-static';
 import Close from '../components/Close';
 import Article from '../components/Article';
-import { inputContact } from '../connectors/pounchdb'
+import { inputContact } from '../connectors/pounchdb';
 
 const defaultState = { name: '', email: '', message: '' };
 
@@ -65,21 +65,25 @@ class Contact extends Component {
                 />
               </label>
             </div>
-          </div> */}
-          {/* <ul>
+          </div>
+          <ul>
             <li><input type="button" value="Send Message" className="primary button" onClick={this.submitForm} /></li>
             <li> */}
-          <div className="icons">
-            <div>
-              <a href="mailto:cameronaziz@me.com" className="icon fa-at"><span className="label">Email</span></a>
-            </div>
-            <div>
-              <a href="https://github.com/cameronaziz" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a>
-            </div>
+        <div className="icons">
+          <div>
+            <a href="mailto:cameronaziz@me.com" className="icon fa-at">
+              <span className="label">Email</span>
+            </a>
           </div>
-            {/* </li>
-          </ul> */}
-        {/* </form> */}
+          <div>
+            <a href="https://github.com/cameronaziz" target="_blank" rel="noopener noreferrer" className="icon fa-github">
+              <span className="label">GitHub</span>
+            </a>
+          </div>
+        </div>
+        {/* </li>
+          </ul>
+        </form> */}
         <Close closeArticle={closeArticle} history={history} />
       </Article>
     );
