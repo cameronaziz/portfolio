@@ -17,10 +17,12 @@ class About extends Component {
           products and applications from conception to production. I am a
           trusted communicator between technical and non-technical staff which
           allows me to architect solutions that are both rapid to deploy and
-          easily scalable. I am a full stack engineer specializing in
-          JavaScript. I have worked on devops, backend and frontend teams
-          individually and I enjoy web technologies such as React and D3. By the
-          way, check out my <a href="/work">awesome work</a>.
+          easily scalable. I am a senior frontend engineer specializing in
+          Typescript, JavaScript, React and GraphQL. I have worked on devops,
+          backend and frontend teams individually and I enjoy learning new web
+          technologies in my free time.
+          <br /><br />
+          By the way, check out my <a href="/work">awesome work</a>.
         </p>
         <Close closeArticle={closeArticle} history={history} />
       </Article>
