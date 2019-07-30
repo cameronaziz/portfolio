@@ -128,11 +128,19 @@ class Content extends Component {
         <Header introTitle={introTitle} openArticle={this.toggleArticle} articleOpen={articleOpen} />
         <div id="main" style={mainStyle}>
           <Switch>
-            <Route exact path="/" />
-            <Route path="/about" render={(props) => <Containers.About {...props} closeArticle={this.toggleArticle} />} />
-            <Route path="/contact" render={(props) => <Containers.Contact {...props} closeArticle={this.toggleArticle} />} />
-            <Route path="/work" render={(props) => <Containers.Work {...props} closeArticle={this.toggleArticle} />} />
-            <Route render={(props) => <Containers.FourOhFour {...props} />} />
+            {/* <Route exact path="/" /> */}
+            <Route path="/about">
+              <Containers.About closeArticle={this.toggleArticle} />
+            </Route>
+            <Route path="/contact">
+              <Containers.Contact closeArticle={this.toggleArticle} />
+            </Route>
+            <Route path="/work">
+              <Containers.Work closeArticle={this.toggleArticle} />
+            </Route>
+            <Route>
+              <Containers.FourOhFour />
+            </Route>
           </Switch>
         </div>
         <Footer />
