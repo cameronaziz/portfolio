@@ -13,6 +13,12 @@ class About extends Component {
           <img src="/images/about.png" alt="" />
         </span>
         <p>
+          I was born and raised in Los Angeles and I recently moved to New York.
+          I enjoy exploring new restaurants and neighborhood stores. I am a huge
+          sports fan, my aligences still are for LA teams, but enjoy going to games
+          with friends and family, whomever may be playing.
+        </p>
+        <p>
           My passion for open source technologies has allowed me to take
           products and applications from conception to production. I am a
           trusted communicator between technical and non-technical staff which

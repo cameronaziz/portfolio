@@ -30,7 +30,7 @@ class Contact extends Component {
     const { history, closeArticle } = this.props;
     return (
       <Article id="contact" className="active" width="40rem" title="Say Hello">
-        <form>
+        {/* <form>
           <div className="fields">
             <div className="field half">
               <label htmlFor="name">Name
@@ -65,18 +65,21 @@ class Contact extends Component {
                 />
               </label>
             </div>
-          </div>
-          <ul className="actions">
+          </div> */}
+          {/* <ul>
             <li><input type="button" value="Send Message" className="primary button" onClick={this.submitForm} /></li>
-            <li>
-              <ul className="icons">
-                <li><a href="mailto:cameronaziz@me.com" className="icon fa-at"><span className="label">Email</span></a></li>
-                <li><a href="https://github.com/cameronaziz" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
-              </ul>
-            </li>
-          </ul>
-        </form>
-
+            <li> */}
+          <div className="icons">
+            <div>
+              <a href="mailto:cameronaziz@me.com" className="icon fa-at"><span className="label">Email</span></a>
+            </div>
+            <div>
+              <a href="https://github.com/cameronaziz" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a>
+            </div>
+          </div>
+            {/* </li>
+          </ul> */}
+        {/* </form> */}
         <Close closeArticle={closeArticle} history={history} />
       </Article>
     );

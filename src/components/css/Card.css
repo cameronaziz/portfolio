@@ -337,3 +337,10 @@
     transform: scale(0.8);
   }
 }
+
+.icons {
+  list-style: none;
+  font-size: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
