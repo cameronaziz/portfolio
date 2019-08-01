@@ -5,10 +5,6 @@ import Close from '../components/Close';
 import Article from '../components/Article';
 
 class About extends Component {
-  componentDidMount() {
-    this.props.toggleArticle();
-  }
-
   render() {
     const { history, toggleArticle } = this.props;
     return (

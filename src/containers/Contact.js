@@ -10,10 +10,6 @@ const defaultState = { name: '', email: '', message: '' };
 class Contact extends Component {
   state = defaultState;
 
-  componentDidMount() {
-    this.props.toggleArticle();
-  }
-
   updateField = (field, { value }) => {
     this.setState((prevState) => {
       prevState[field] = value;

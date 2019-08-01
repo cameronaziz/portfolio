@@ -5,6 +5,12 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Routes from './Routes';
 
+const routes = [
+  'work',
+  'about',
+  'contact'
+]
+
 class Content extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +18,10 @@ class Content extends Component {
       this.createEscapeListener();
     }
     this.container = createRef();
-    this.state = { articleOpen: false, introTitle: '' };
+    const { pathname } = this.props.location
+    const paths = pathname.split('/')
+    const articleOpen = routes.includes((route) => route === paths[1])
+    this.state = { articleOpen, introTitle: '' };
   }
 
   componentDidMount() {
