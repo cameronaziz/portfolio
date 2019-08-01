@@ -10,6 +10,10 @@ const defaultState = { name: '', email: '', message: '' };
 class Contact extends Component {
   state = defaultState;
 
+  componentDidMount() {
+    this.props.toggleArticle();
+  }
+
   updateField = (field, { value }) => {
     this.setState((prevState) => {
       prevState[field] = value;
@@ -18,8 +22,8 @@ class Contact extends Component {
   }
 
   submitForm = () => {
-    const { closeArticle, history, env } = this.props;
-    closeArticle(this.state.name);
+    const { toggleArticle, history, env } = this.props;
+    toggleArticle(this.state.name);
     inputContact(this.state, env);
     this.setState(defaultState);
     history.push('/');
@@ -27,7 +31,7 @@ class Contact extends Component {
 
   render() {
     const { name, email, message } = this.state;
-    const { history, closeArticle } = this.props;
+    const { history, toggleArticle } = this.props;
     return (
       <Article id="contact" className="active" width="40rem" title="Say Hello">
         {/* <form>
@@ -84,7 +88,7 @@ class Contact extends Component {
         {/* </li>
           </ul>
         </form> */}
-        <Close closeArticle={closeArticle} history={history} />
+        <Close closeArticle={toggleArticle} history={history} />
       </Article>
     );
   }
@@ -94,7 +98,7 @@ Contact.propTypes = {
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
-  closeArticle: PropTypes.func.isRequired,
+  toggleArticle: PropTypes.func.isRequired,
 };
 
 export default withSiteData(Contact);

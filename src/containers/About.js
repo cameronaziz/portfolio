@@ -5,8 +5,12 @@ import Close from '../components/Close';
 import Article from '../components/Article';
 
 class About extends Component {
+  componentDidMount() {
+    this.props.toggleArticle();
+  }
+
   render() {
-    const { history, closeArticle } = this.props;
+    const { history, toggleArticle } = this.props;
     return (
       <Article id="about" className="active" width="40rem" title="About Me">
         <span className="image main">
@@ -30,7 +34,7 @@ class About extends Component {
           <br /><br />
           By the way, check out my <a href="/work">awesome work</a>.
         </p>
-        <Close closeArticle={closeArticle} history={history} />
+        <Close closeArticle={toggleArticle} history={history} />
       </Article>
     );
   }
@@ -40,7 +44,7 @@ About.propTypes = {
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
-  closeArticle: PropTypes.func.isRequired,
+  toggleArticle: PropTypes.func.isRequired,
 };
 
 export default withSiteData(About);

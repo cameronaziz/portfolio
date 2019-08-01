@@ -6,13 +6,13 @@ import * as Containers from './containers';
 const Routes = ({ toggleArticle }) => (
   <Switch>
     <Route path="/about">
-      <Containers.About closeArticle={toggleArticle} />
+      <Containers.About toggleArticle={toggleArticle} />
     </Route>
     <Route path="/contact">
-      <Containers.Contact closeArticle={toggleArticle} />
+      <Containers.Contact toggleArticle={toggleArticle} />
     </Route>
     <Route path="/work">
-      <Containers.Work closeArticle={toggleArticle} />
+      <Containers.Work toggleArticle={toggleArticle} />
     </Route>
     <Route>
       <Containers.FourOhFour />

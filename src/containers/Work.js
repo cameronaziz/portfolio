@@ -7,12 +7,16 @@ import { projects } from '../data';
 import Article from '../components/Article';
 
 class Work extends Component {
+  componentDidMount() {
+    this.props.toggleArticle();
+  }
+
   render() {
-    const { history, closeArticle } = this.props;
+    const { history, toggleArticle } = this.props;
     return (
       <Article id="work" className="active" title="My Work">
         {projects.map(project => <Card key={project.key} card={project} />)}
-        <Close closeArticle={closeArticle} history={history} />
+        <Close closeArticle={toggleArticle} history={history} />
       </Article>
     );
   }
@@ -22,7 +26,7 @@ Work.propTypes = {
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
-  closeArticle: PropTypes.func.isRequired,
+  toggleArticle: PropTypes.func.isRequired,
 };
 
 export default withSiteData(Work);
