@@ -1,9 +1,9 @@
 import React, { Component, createRef } from 'react';
-import { Route, Switch, withRouter } from 'react-static';
+import { withRouter } from 'react-static';
 import { Helmet } from 'react-helmet';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import * as Containers from './containers';
+import Routes from './Routes';
 
 class Content extends Component {
   constructor(props) {
@@ -127,20 +127,7 @@ class Content extends Component {
         </Helmet>
         <Header introTitle={introTitle} openArticle={this.toggleArticle} articleOpen={articleOpen} />
         <div id="main" style={mainStyle}>
-          <Switch>
-            <Route path="/about">
-              <Containers.About closeArticle={this.toggleArticle} />
-            </Route>
-            <Route path="/contact">
-              <Containers.Contact closeArticle={this.toggleArticle} />
-            </Route>
-            <Route path="/work">
-              <Containers.Work closeArticle={this.toggleArticle} />
-            </Route>
-            <Route>
-              <Containers.FourOhFour />
-            </Route>
-          </Switch>
+          <Routes toggleArticle={this.toggleArticle} />
         </div>
         <Footer />
       </div>
