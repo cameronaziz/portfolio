@@ -49,7 +49,7 @@
     "eslint-plugin-react": "^7.11.0",
     "jest": "^23.6.0",
     "react-test-renderer": "^16.5.2",
-    "serve": "^6.1.0"
+    "serve": "^10.1.2"
   },
   "jest": {
     "moduleFileExtensions": [
