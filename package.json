@@ -31,7 +31,7 @@
     "react-hot-loader": "^4.3.11",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
-    "react-static": "^5.9.8",
+    "react-static": "^7.6.2",
     "react-static-routes": "^1.0.0",
     "redux": "^3.7.2",
     "styled-components": "^3"
@@ -47,7 +47,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.0",
-    "jest": "^23.6.0",
+    "jest": "^29.3.1",
     "react-test-renderer": "^16.5.2",
     "serve": "^6.1.0"
   },
